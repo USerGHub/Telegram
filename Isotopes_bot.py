@@ -5,7 +5,7 @@ class Isotopes_Bot:
 
     def __init__(self, token):
         self.token = token
-        self.api_url = 'https://api.telegram.org/bot606971001:AAGYAt9B8RskqCjczuZ9q5D0UtLLl_QX8jI/'.format(token)
+        self.api_url = 'https://api.telegram.org/bot{}/'.format(token)
 
     def get_updates(self, offset=None, timeout=30):
         method = 'getUpdates'
@@ -30,7 +30,7 @@ class Isotopes_Bot:
 
         return last_update
     
-greet_bot = Isotopes_Bot(token)
+greet_bot = Isotopes_Bot('606971001:AAGYAt9B8RskqCjczuZ9q5D0UtLLl_QX8jI')
 
 def main():
     new_offset = None
