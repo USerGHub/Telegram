@@ -1,1 +1,1 @@
-worker: python Isotopes_bot.py 
+web: python runserver.py $PORT
