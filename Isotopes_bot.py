@@ -48,7 +48,7 @@ def main():
         if last_chat_text.lower() == 'Прив':
             greet_bot.send_message(last_chat_id, 'Здраствуй')
             
-        new_offset = las_update_id + 1
+        new_offset = last_update_id + 1
         
 if __name__ == '__main__':  
     try:
